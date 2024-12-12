@@ -23,13 +23,13 @@ const ArticleCard = (props: ArticleCardProps) => {
         <Link to={`/article/${props.article.id}`}>
           <Button variant='warning'>Read</Button>
         </Link>
-        <a
+        {/* <a
           href={props.article.url}
           target='_blank'
           className='btn btn-secondary ms-2'
         >
           To the Article
-        </a>
+        </a> */}
       </Card.Body>
     </Card>
   )

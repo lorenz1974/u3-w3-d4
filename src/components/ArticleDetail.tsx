@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import {
   Container,
   Row,
@@ -10,6 +11,7 @@ import {
   Badge,
   Alert,
   Spinner,
+  Button,
 } from 'react-bootstrap'
 import { IArticle, ILaunch } from '../interfaces'
 
@@ -92,6 +94,9 @@ const ArticleDetail = () => {
           >
             View Original Article
           </a>
+          <Link to={'/'} className='ms-3'>
+            <Button variant='success'>Back</Button>
+          </Link>
         </Col>
       </Row>
       {article.launches?.length > 0 && (
